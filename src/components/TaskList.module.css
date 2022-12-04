@@ -1,0 +1,120 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+main > div {
+  width: 100%;
+  max-width: 736px;
+}
+
+.taskForm {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-top: calc(0px - 1.5rem - 3px);
+}
+
+.taskForm input {
+  flex: 1;
+  height: 3.25rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+
+  transition: all 0.1s;
+}
+
+.taskForm input:focus {
+  border-color: var(--purple-700);
+}
+
+.taskForm button[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 3.25rem;
+  background: var(--blue-500);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 0.5rem;
+
+  transition: all 0.1s;
+}
+
+.taskForm button[type="submit"]:not(:disabled):hover {
+  background: var(--blue-200);
+}
+
+.taskForm button[type="submit"]:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.taskInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.taskCreate {
+  display: flex;
+  height: 20px;
+  gap: 0.5rem;
+  color: var(--blue-200);
+  padding: 0.125rem 0.5rem; 
+}
+
+.taskCreate span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.25rem 0.5rem; 
+}
+
+.taskCompleted {
+  display: flex;
+  height: 20px;
+  gap: 0.5rem;
+  color: var(--purple-300);
+  padding: 0.125rem 0.5rem; 
+}
+
+.taskCompleted span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.25rem 0.5rem; 
+}
+
+.taskEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 4rem 0;
+  line-height: 1.4;
+}
+
+.taskEmpty strong { 
+  padding-top: 1rem;
+}
